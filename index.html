@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   <div class="container">
+    <form class="form" action="#">
+
+        <label for="intext">Pul miqdorini kiriting:
+           
+        </label>
+        <input class="form__input-text" id="intext" name="intext" type="text" required >
+        <label for="inselect">
+           Pul birligini tanlang:
+        </label>
+        <select class="form__select-text" id="inselect" name="inselect">
+            <option selected disabled>Pul birligini</option>
+            <option value="USD">
+                USD
+            </option>
+            <option value="EUR">
+                EUR
+            </option>
+            <option value="RUB">
+                RUB
+            </option>
+        </select>
+      <div class="form__div">  <button type="submit" class="form__btn">calculate</button>
+        <button type="reset" class="form__btn">reset</button></div>
+    </form>
+    <div class="natija">
+        <p class="natija__text">Pul miqdorini kiriting:</p>
+        <button class="natija__btn" type="button">Cansel</button>
+    </div>
+   </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@keyframes open{
+    0%{
+        transform: scale(0);
+       
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes close{
+    100%{
+        transform: scale(1);
+    }
+    0%{
+        transform: scale(0);
+    }
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.form {
+    width: 600px;
+    margin: 0 auto;
+    background-color: aqua;
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+.form__open{
+    display: block;
+}
+.form__close{
+    display: none;
+}
+label{
+    font-size: 32px;
+   
+
+}
+.form__input-text {
+    display: block;
+    padding: 8px;
+    font-size: 28px;
+   
+    width: 430px;
+    
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.form__select-text {
+    display: block;
+    padding: 8px;
+    font-size: 28px;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.form__div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.form__btn, .natija__btn {
+    display: inline-block;
+    width: 200px;
+    border: 2px solid rgb(44, 27, 58);
+    font-size: 28px;
+    padding: 8px;
+    border-radius: 8px;
+   color: #fff;
+   background-color: rgb(44, 27, 58);
+   margin: 0 auto;
+}
+.form__btn:hover, .natija__btn:hover{
+    background: transparent;
+    color: rgb(44, 27, 58);
+    /* border: rgb(44, 27, 58); */
+}
+.natija{
+    position: relative;
+    animation: open 0.5s linear;
+    animation: close 0.5s linear;
+    margin: 0 auto;
+    position: absolute;
+    top: 120px;
+    left: 430px;
+width: 400px;
+background-color: tomato;
+text-align: center;
+padding: 50px;
+font-size: 30px;
+
+    display: none;
+}
+.natija__open{
+    display: block;
+}
+.natija__close{
+    display: none;
+}
